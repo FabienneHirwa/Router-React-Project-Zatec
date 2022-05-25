@@ -1,26 +1,13 @@
-.nav{
-    background-color: rgb(43, 92, 109);
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
-   
-}
-.nav a{
-    color: yellow ; 
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-}
-.nav li :hover{
-    color: white;
-}
-.form{
+.formContact{
     width: 400px;
     border-radius: 10px;
     padding-left: 30px;
     padding-bottom: 30px;
     margin-left: 25%;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
 }
-.form-group input{
+.formContact input{
     width: 600px;
     padding: 10px;
     border-radius: 2px;
@@ -29,18 +16,23 @@
     background-color: #dddddd;
     
 }
-label{
-    font-weight: bolder;
-}
-.form-check label{
-    font-weight: lighter;
-}
-.form button{
+.formContact button{
     width: 600px;
     background-color: rgb(43, 92, 109);
 
 }
-.form h2{
+.formContact textarea{
+    width: 600px;   
+}
+
+h1{
     color: rgb(43, 92, 109);
     text-shadow: 1px 1px black;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact .fas{
+    color: rgb(43, 92, 109);
 }

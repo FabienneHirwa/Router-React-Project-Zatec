@@ -19,6 +19,7 @@
     padding-bottom: 30px;
     margin-left: 25%;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 .form-group input{
     width: 600px;
@@ -43,4 +44,24 @@ label{
 .form h2{
     color: rgb(43, 92, 109);
     text-shadow: 1px 1px black;
+}
+.attendeeList{
+    width: 500px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+.attendeeList h2{
+    color: rgb(43, 92, 109);
+    text-shadow: 1px 1px black;
+}
+.fa-check{
+    font-size:30px;
+    color:green;
+}
+.fa-times{
+    font-size:30px;
+    color:red;
 }
