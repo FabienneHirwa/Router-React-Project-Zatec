@@ -8,7 +8,7 @@ class User extends Component {
     console.log(this.props)
     return (
       <div>
-        {/* <div>
+        <div>
         <h6><strong>{user.name}</strong> </h6>
         </div>
         <p><strong>Surname: </strong>{user.surname}</p>
@@ -16,7 +16,7 @@ class User extends Component {
         <p><strong>Email: </strong>{user.email} </p>
         <button className="editButton" onClick={() =>this.props.dispatch({type: "EDIT_USER",id: user.id })}> Edit</button>
         <button className="deleteButton" onClick={() => this.props.dispatch({type: "DELETE_USER",id: user.id})}> Delete</button>
-         */}
+        
       </div>
     );
   }

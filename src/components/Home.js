@@ -20,9 +20,10 @@ class Home extends Component {
             <div key={user.id} className="attending">
               <div className="card w-100">
           <div className="card-body">
-            <h5 className="card-title">{user.name} <i class='fas fa-check'></i> </h5>
+            <h5 className="card-title">{user.name} <i className='fas fa-check'></i> </h5>
             <p className="card-text">Attending Zatec Training!</p>
-            <Link to={{pathname: '/user',state: user}}className="btn btn-primary">Details</Link>
+            <a onClick={user}  className="btn btn-primary">
+              Details</a>
             </div>
           </div>
             {/* {user.editing ? (
@@ -35,11 +36,11 @@ class Home extends Component {
            {
             user.confirm === "false" ?
             <div key={user.id} className="notAttending">
-              <div class="card w-100">
-          <div class="card-body">
-            <h5 class="card-title">{user.name} <i class='fas fa-times'></i></h5>
-            <p class="card-text">Not Attending Zatec Training!</p>
-            <a href="#" class="btn btn-primary">Details</a>
+              <div className="card w-100">
+          <div className="card-body">
+            <h5 className="card-title">{user.name} <i className='fas fa-times'></i></h5>
+            <p className="card-text">Not Attending Zatec Training!</p>
+            <a href="#" className="btn btn-primary">Details</a>
             </div>
           </div>
                
