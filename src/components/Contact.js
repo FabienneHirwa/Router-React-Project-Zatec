@@ -11,7 +11,7 @@ const Contact = () => {
             <i class='fas fa-phone'> +250780577060</i>
             </div>
             <div>
-            <i class='fas fa-envelope '> zatec@gmail.com</i>
+            <i class='fas fa-envelope'> zatec@gmail.com</i>
             </div>
         </div>
         <br />
