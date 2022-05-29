@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/Nav';
@@ -16,8 +17,7 @@ function App() {
   <Routes>
     <Route path="/"exact element={<Home />}/>
     <Route path="/addAttendee" element={<AddAttendee />}/>
-    <Route path="/contact" element={<Contact />}/>
-   
+    <Route path="/contact" element={<Contact />}/> 
   </Routes>
 </div>
 </Router>
