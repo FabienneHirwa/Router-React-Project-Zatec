@@ -5,13 +5,12 @@ const Contact = () => {
         <>
         <form className="formContact">
         <h1>Get In Touch</h1>
-        <br/>
         <div className="contact">
             <div>
-            <i class='fas fa-phone'> +250780577060</i>
+            <h6><strong>Tel:</strong> +250780577060</h6>
             </div>
             <div>
-            <i class='fas fa-envelope'> zatec@gmail.com</i>
+            <h6><strong>Email:</strong> zatec@gmail.com</h6>
             </div>
         </div>
         <br />

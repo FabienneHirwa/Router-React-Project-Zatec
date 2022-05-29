@@ -29,10 +29,7 @@ h1{
     color: rgb(43, 92, 109);
     text-shadow: 1px 1px black;
 }
-.contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 .contact .fas{
     color: rgb(43, 92, 109);
 }

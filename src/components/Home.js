@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import './index.css';
 import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
+
 
 
 class Home extends Component {
@@ -58,7 +58,7 @@ class Home extends Component {
                <Dialog open={this.state.open} maxWidth={"lg"} onClose={this.handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
              <div  style={{padding:"40px", backgroundColor:"black", color:"white"}}>
             <div>
-              <h6><strong>{this.state.value.name}(Not attending)</strong> </h6>
+              <h6><strong >{this.state.value.name}(Not attending)</strong> </h6>
             </div><br/>
             <p><strong style={{color:"yellow"}}>Surname: </strong>{this.state.value.surname}</p>
             <p><strong style={{color:"yellow"}}>Tel: </strong>{this.state.value.telephone}</p>
@@ -69,8 +69,8 @@ class Home extends Component {
             </div>
             </Dialog>
             <div className="card-body">
-            <h5 className="card-title">{user.name} <i className='fas fa-times'></i></h5>
-            <p className="card-text">Not Attending Zatec Training!</p>
+            <h5 className="card-title" >{user.name} <i className='fas fa-times'></i></h5>
+            <p className="card-text"  style={{color:"red"}}>Not Attending Zatec Training!</p>
             <a onClick={(()=>{this.setState({value:user}) 
             this.handleClickOpen()})}  className="btn btn-primary">Details</a>
             </div>
