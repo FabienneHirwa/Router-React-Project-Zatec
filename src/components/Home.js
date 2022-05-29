@@ -30,16 +30,16 @@ class Home extends Component {
             <div key={user.id} className="attending">
               <div className="card w-100">
                 <Dialog open={this.state.open} maxWidth={"lg"} onClose={this.handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
-                  <div style={{padding:"40px"}}>
+                  <div style={{padding:"60px"}}>
                     <div className="title">
                       <h2 ><strong>{this.state.value.name}</strong> </h2>
                     </div>
                     <p><strong>Surname: </strong>{this.state.value.surname}</p>
                     <p><strong>Tel: </strong>{this.state.value.telephone}</p>
                     <p><strong>Email: </strong>{this.state.value.email} </p>
-                    <button className="btn btn-primary" onClick={() => {this.props.dispatch({type: "DELETE_USER",id: this.state.value.id}) 
+                    <button className="btn btn-secondary" onClick={() => {this.props.dispatch({type: "DELETE_USER",id: this.state.value.id}) 
                     this.handleClose()}}> Delete</button>
-                    <button onClick={this.handleClose} className="btn btn-primary">Close</button>
+                    <button onClick={this.handleClose} className="btn btn-secondary">Close</button>
                     </div>
                 </Dialog>
               <div className="card-body">
@@ -64,9 +64,9 @@ class Home extends Component {
             <p><strong>Surname: </strong>{this.state.value.surname}</p>
             <p><strong>Tel: </strong>{this.state.value.telephone}</p>
             <p><strong>Email: </strong>{this.state.value.email} </p>
-            <button className="btn btn-primary" onClick={() => {this.props.dispatch({type: "DELETE_USER",id: this.state.value.id})
+            <button className="btn btn-secondary" onClick={() => {this.props.dispatch({type: "DELETE_USER",id: this.state.value.id})
              this.handleClose()}}> Delete</button>
-            <button onClick={this.handleClose} className="btn btn-primary" >Close</button>
+            <button onClick={this.handleClose} className="btn btn-secondary" >Close</button>
             </div>
             </Dialog>
             <div className="card-body">
