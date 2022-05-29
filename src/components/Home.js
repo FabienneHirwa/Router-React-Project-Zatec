@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import './index.css';
 import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
+import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 
 
 class Home extends Component {
@@ -43,7 +43,7 @@ class Home extends Component {
                     </div>
                 </Dialog>
               <div className="card-body">
-                <h5 className="card-title">{user.name} <i className='fas fa-check'></i> </h5>
+                <h5 className="card-title">{user.name} <FaBeer /> </h5>
                 <p className="card-text">Attending Zatec Training!</p>
                 <a onClick={(()=>{this.setState({value:user}) 
                 this.handleClickOpen()})}  className="btn btn-primary">Details</a>
