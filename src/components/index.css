@@ -65,3 +65,10 @@ label{
     font-size:30px;
     color:red;
 }
+.btn-primary{
+    margin-left: 30px;
+}
+.title{
+    color: rgb(43, 92, 109);
+    text-shadow: 1px 1px black;
+}

@@ -30,17 +30,16 @@ class Home extends Component {
             <div key={user.id} className="attending">
               <div className="card w-100">
                 <Dialog open={this.state.open} maxWidth={"lg"} onClose={this.handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
-                  <DialogTitle id="alert-dialog-title"> {this.state.value.name} </DialogTitle>
                   <div style={{padding:"40px"}}>
-                    <div>
-                      <h6><strong>{this.state.value.name}</strong> </h6>
+                    <div className="title">
+                      <h2 ><strong>{this.state.value.name}</strong> </h2>
                     </div>
                     <p><strong>Surname: </strong>{this.state.value.surname}</p>
                     <p><strong>Tel: </strong>{this.state.value.telephone}</p>
                     <p><strong>Email: </strong>{this.state.value.email} </p>
-                    <button className="deleteButton" onClick={() => {this.props.dispatch({type: "DELETE_USER",id: this.state.value.id}) 
+                    <button className="btn btn-primary" onClick={() => {this.props.dispatch({type: "DELETE_USER",id: this.state.value.id}) 
                     this.handleClose()}}> Delete</button>
-                    <button onClick={this.handleClose}>Close</button>
+                    <button onClick={this.handleClose} className="btn btn-primary">Close</button>
                     </div>
                 </Dialog>
               <div className="card-body">
@@ -57,24 +56,24 @@ class Home extends Component {
            <div key={user.id} className="notAttending">
              <div className="card w-100">
                <Dialog open={this.state.open} maxWidth={"lg"} onClose={this.handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
-                 <DialogTitle id="alert-dialog-title">{this.state.value.name} </DialogTitle>
-             <div style={{padding:"40px"}}>
-            <div>
-              <h6><strong>{this.state.value.name}</strong> </h6>
+                 
+             <div style={{padding:"60px"}}>
+            <div className="title">
+              <h2><strong>{this.state.value.name}</strong> </h2>
             </div>
             <p><strong>Surname: </strong>{this.state.value.surname}</p>
             <p><strong>Tel: </strong>{this.state.value.telephone}</p>
             <p><strong>Email: </strong>{this.state.value.email} </p>
-            <button className="deleteButton" onClick={() => {this.props.dispatch({type: "DELETE_USER",id: this.state.value.id})
+            <button className="btn btn-primary" onClick={() => {this.props.dispatch({type: "DELETE_USER",id: this.state.value.id})
              this.handleClose()}}> Delete</button>
-            <button onClick={this.handleClose}>Close</button>
+            <button onClick={this.handleClose} className="btn btn-primary" >Close</button>
             </div>
             </Dialog>
             <div className="card-body">
             <h5 className="card-title">{user.name} <i className='fas fa-times'></i></h5>
             <p className="card-text">Not Attending Zatec Training!</p>
             <a onClick={(()=>{this.setState({value:user}) 
-            this.handleClickOpen()})}  className="btn btn-primary">Details</a>
+            this.handleClickOpen()})}  className="btn btn-primary" >Details</a>
             </div>
           </div>
           </div> : null
