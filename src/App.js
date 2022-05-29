@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './components/Contact';
 import AddAttendee from './components/AddAttendee';
 import Home from './components/Home';
-import User from './components/user';
+
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     <Route path="/"exact element={<Home />}/>
     <Route path="/addAttendee" element={<AddAttendee />}/>
     <Route path="/contact" element={<Contact />}/>
-    <Route path="/user" element={<User />}/>
+   
   </Routes>
 </div>
 </Router>

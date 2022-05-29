@@ -16,7 +16,7 @@ class EditUser extends Component {
       telephone,
       email
     };
-
+    
     this.props.dispatch({
       type: "UPDATE_USER",
       id: this.props.user.id,
